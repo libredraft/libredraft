@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibreDraft</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,200,0,0"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-M7Q5FZ12JC"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-M7Q5FZ12JC");
+  </script>
+
+  <body>
+    <nav id="menu" style="display: none">
+      <ul>
+        <li>
+          <a href="#" id="open-button"
+            ><div>
+              <span class="material-symbols-sharp">upload</span
+              ><span>Import</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" id="save-button"
+            ><div>
+              <span class="material-symbols-sharp">download</span
+              ><span>Export</span>
+            </div>
+          </a>
+        </li>
+        <hr />
+        <li>
+          <a href="https://github.com/libredraft/libredraft"
+            ><div>
+              <span class="material-symbols-sharp">info</span><span>About</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="mailto: libredraft@gmail.com"
+            ><div>
+              <span class="material-symbols-sharp">mail</span
+              ><span>Contact</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header id="application-bar">
+      <div id="brace">
+        <a href="#" id="menu-button">
+          <span class="material-symbols-sharp">menu</span>
+        </a>
+        <h1 id="logo">
+          <a href="/">
+            <img src="./assets/images/logo-banner.png" alt="LibreDraft"
+          /></a>
+        </h1>
+      </div>
+      <nav id="social-panel">
+        <a href="https://github.com/libredraft/libredraft" id="github-button">
+          <img src="./assets/images/github.svg" alt="Github" />
+        </a>
+      </nav>
+    </header>
+    <nav id="action-panel">
+      <section id="drawing-panel">
+        <button title="Draw Line" id="line-button">
+          <span class="material-symbols-sharp">pen_size_1</span>
+        </button>
+        <button title="Draw Rectangle" id="rectangle-button">
+          <span class="material-symbols-sharp">rectangle</span>
+        </button>
+        <button title="Draw Circle" id="circle-button">
+          <span class="material-symbols-sharp">circle</span>
+        </button>
+        <button title="Draw Arc" id="arc-button">
+          <span class="material-symbols-sharp">line_curve</span>
+        </button>
+        <button title="Add Text" id="text-button">
+          <span class="material-symbols-sharp">title</span>
+        </button>
+      </section>
+      <section id="editing-panel">
+        <div id="stroke-color">
+          <button title="Set Stroke Color" id="stroke-color-button">
+            <span class="material-symbols-sharp">edit</span>
+          </button>
+          <input type="color" id="stroke-color-input" value="#ffffff" />
+        </div>
+        <div id="stroke-width">
+          <span
+            class="material-symbols-sharp"
+            id="stroke-width-button"
+            title="Set Stroke Width"
+            >line_weight</span
+          >
+          <span id="stroke-width-value">1</span>
+          <input
+            type="range"
+            id="stroke-width-input"
+            value="1"
+            step="1"
+            min="1"
+            max="10"
+            style="display: none"
+          />
+        </div>
+        <div id="fill-color">
+          <button title="Set Fill Color" id="fill-color-button">
+            <span class="material-symbols-sharp">colors</span>
+          </button>
+          <input type="color" id="fill-color-input" value="#ffffff" />
+        </div>
+        <div id="opacity">
+          <span
+            class="material-symbols-sharp"
+            id="opacity-button"
+            title="Set Opacity"
+            >opacity</span
+          >
+          <span id="opacity-value">1</span>
+          <input
+            type="range"
+            id="opacity-input"
+            value="1"
+            min="0"
+            max="1"
+            step="0.1"
+            style="display: none"
+          />
+        </div>
+        <div id="font-size">
+          <span
+            class="material-symbols-sharp"
+            id="font-size-button"
+            title="Set Font Size"
+            >text_fields</span
+          >
+          <span id="font-size-value">14</span>
+          <input
+            type="range"
+            id="font-size-input"
+            value="14"
+            min="8"
+            max="72"
+            step="2"
+            style="display: none"
+          />
+        </div>
+        <div id="remove">
+          <span
+            class="material-symbols-sharp"
+            id="remove-button"
+            title="Remove element"
+            >delete</span
+          >
+        </div>
+      </section>
+    </nav>
+    <div id="canvas-container">
+      <svg id="canvas">
+        <!-- <g id="grid"></g> -->
+      </svg>
+      <div id="position-box" class="input-box">
+        <label>X:</label>
+        <input type="number" id="x-input" />
+        <label>Y:</label>
+        <input type="number" id="y-input" />
+      </div>
+      <div id="length-box" class="input-box">
+        <label>L:</label>
+        <input type="number" id="length-input" />
+      </div>
+      <div id="text-box" class="input-box">
+        <label>Text:</label>
+        <input type="text" id="text-input" placeholder="Type here" />
+      </div>
+    </div>
+    <footer id="status-bar">
+      <div id="coordinates">0, 0</div>
+      <div id="zoom-value">100%</div>
+      <div id="o-snap">OSNAP</div>
+      <div id="ortho">ORTHO</div>
+    </footer>
+    <script type="text/javascript" src="./dist/bundle.js"></script>
+  </body>
+</html>

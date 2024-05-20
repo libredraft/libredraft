@@ -1,0 +1,29 @@
+{
+  "name": "LibreDraft",
+  "version": "0.1.0",
+  "description": "Free, open-source, and lightweight! Design 2D CAD projects in your browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "keywords": [
+    "2D",
+    "CAD",
+    "SVG",
+    "TypeScript"
+  ],
+  "author": "Hamed Samsami",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/webpack": "^5.28.5",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
