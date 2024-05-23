@@ -23,7 +23,7 @@
     <a href="https://github.com/libredraft/libredraft"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://libredraft.github.io/libredraft">View Live Version</a>
+    <a href="https://libredraft.com">View Live Version</a>
     ·
     <a href="https://github.com/libredraft/libredraft/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -67,7 +67,7 @@
 
 ### Option 1: Try the Live Version
 
-You can start by trying the [live version](https://libredraft.github.io/libredraft) of the app. This is the easiest option and doesn't require any setup.
+You can start by trying the [live version](https://libredraft.com) of the app. This is the easiest option and doesn't require any setup.
 
 ### Option 2: Run a Local Version
 
