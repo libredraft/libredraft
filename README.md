@@ -141,7 +141,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 For any inquiries, feel free to reach out via email or connect with us on social media:
 
-Email: libredraft@gmail.com
+Email: hamed@libredraft.com
 
 X: [@libredraft](https://x.com/libredraft)
 
